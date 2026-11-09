@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết Kế 1 Bữa Ăn Dinh Dưỡng</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background-color: #f4f8f5; }
+        header { background-color: #2e7d32; }
+        .custom-nav a { color: #2e7d32; }
+        .custom-nav a:hover { color: #1b5e20; background-color: #e8f5e9; }
+        .dropdown-content a:hover { color: #2e7d32 !important; background-color: #e8f5e9; }
+        main h2 { color: #1b5e20; }
+        .card h3 { color: #2e7d32; }
+        .btn { background-color: #4caf50; }
+        .btn:hover { background-color: #388e3c; }
+        .intro-section { background-color: #eef7ee; border-left: 5px solid #2e7d32; }
+        .intro-section h3 { color: #2e7d32; }
+        footer strong { color: #2e7d32; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>THIẾT KẾ 1 BỮA ĂN DINH DƯỠNG</h1>
+        </header>
+
+        <nav class="custom-nav">
+            <a href="index.html" style="background-color: #2e7d32; color: white;">Trang chủ</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Món ăn ▾</a>
+                <div class="dropdown-content">
+                    <a href="chan-gio-ham-ruou.html">Chân giò hầm rượu</a>
+                    <a href="ca-doi-kho.html">Cá đối kho</a>
+                    <a href="canh-rau-cai-thao.html">Canh rau cải thảo</a>
+                </div>
+            </div>
+            <a href="calo-calculator.html">Giá trị dinh dưỡng</a>
+        </nav>
+
+        <main>
+            <h2>Thực Đơn Các Món Ăn Chính</h2>          
+            <div class="grid">
+                <div class="card">
+                    <img src="chan-gio.png" alt="Chân giò hầm rượu" class="food-img">
+                    <h3>Chân Giò Hầm Rượu</h3>
+                    <p>Món ăn béo ngậy, bồi bổ thể lực, chứa lượng đạm và collagen dồi dào.</p>
+                    <a href="chan-gio-ham-ruou.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="card">
+                    <img src="ca-doi.png" alt="Cá đối kho" class="food-img">
+                    <h3>Cá Đối Kho</h3>
+                    <p>Món kho đậm vị truyền thống, bổ sung đạm lành mạnh và axit béo omega-3 tốt cho tim mạch.</p>
+                    <a href="ca-doi-kho.html" class="btn">Xem chi tiết</a>
+                </div>              
+                <div class="card">
+                    <img src="canh.png" alt="Canh rau cải thảo" class="food-img">
+                    <h3>Canh Rau Cải Thảo</h3>
+                    <p>Món canh thanh nhiệt, giàu chất xơ, vitamin và chất chống oxy hóa cân bằng bữa ăn.</p>
+                    <a href="canh-rau-cai-thao.html" class="btn">Xem chi tiết</a>
+                </div>
+            </div>          
+            <section class="intro-section">
+                <h3>Giới Thiệu Tổng Quan Bữa Ăn</h3>
+                <p>
+                    Bữa ăn được thiết kế dựa trên sự kết hợp hài hòa giữa các nhóm chất dinh dưỡng cần thiết cho cơ thể: 
+                    đạm và mỡ từ <strong>Chân giò hầm rượu</strong>, đạm dễ tiêu cùng omega-3 từ <strong>Cá đối kho</strong>, 
+                    kết hợp cùng chất xơ và vitamin từ <strong>Canh rau cải thảo</strong>. 
+                    Đây là thực đơn vừa đáp ứng đủ năng lượng hoạt động trong ngày, vừa đảm bảo sự ngon miệng và cân bằng dưỡng chất cho cả gia đình.
+                </p>
+            </section>
+        </main>      
+        
+        <footer>
+            <p>Dự án: Thiết kế 1 bữa ăn dinh dưỡng</p>
+            <p>Học sinh: <strong>Nguyễn Hồng Phúc</strong> - Lớp: <strong>11A6</strong> - Trường: <strong>THPT Nguyễn Duy Trinh</strong></p>
+        </footer>
+    </div>
+</body>
+</html>

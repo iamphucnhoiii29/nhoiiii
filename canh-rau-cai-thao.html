@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canh Rau Cải Thảo Nấu Tôm - Chi Tiết Món Ăn</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f1f8f1;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #c8e6c9;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        /* Thanh điều hướng riêng biệt */
+        .custom-nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px 0;
+            border-bottom: 2px solid #c8e6c9;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .custom-nav a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        .custom-nav a:hover {
+            color: #1b5e20;
+        }
+
+        /* Menu thả xuống */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+            z-index: 1000;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            padding: 8px 0;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown-content a {
+            color: #333 !important;
+            padding: 10px 16px;
+            display: block;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #e8f5e9;
+            color: #2e7d32 !important;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .btn {
+            background-color: #4caf50;
+            color: white;
+        }
+        .btn:hover {
+            background-color: #388e3c;
+        }
+        h2, h3 {
+            color: #2e7d32;
+        }
+        .recipe-step {
+            background-color: #e8f5e9;
+            border-left: 4px solid #2e7d32;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .media-box {
+            margin-top: 12px;
+            text-align: center;
+        }
+        .media-box img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 1px solid #c8e6c9;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto;
+        }
+        .media-box video {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            max-height: 500px;
+            border-radius: 6px;
+            border: 1px solid #c8e6c9;
+            background: #000;
+            display: block;
+            margin: 0 auto;
+        }
+        .completion-section {
+            background-color: #dcedc8;
+            border: 2px dashed #2e7d32;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .completion-section h3 {
+            margin-bottom: 10px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .nav-buttons .btn {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Phần tiêu đề riêng -->
+        <header>
+            <h1>THIẾT KẾ 1 BỮA ĂN DINH DƯỠNG</h1>
+        </header>
+
+        <!-- Phần menu điều hướng riêng biệt -->
+        <nav class="custom-nav">
+            <a href="index.html">Trang chủ</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Món ăn ▾</a>
+                <div class="dropdown-content">
+                    <a href="chan-gio-ham-ruou.html">Chân giò hầm rượu</a>
+                    <a href="ca-doi-kho.html">Cá đối kho</a>
+                    <a href="canh-rau-cai-thao.html">Canh rau cải thảo</a>
+                </div>
+            </div>
+            <a href="calo-calculator.html">Giá trị dinh dưỡng</a>
+        </nav>
+
+        <main>
+            <h2>Canh Rau Cải Thảo Nấu Tôm</h2>
+            <section class="intro-section" style="border-left-color: #2e7d32; background-color: #e8f5e9;">
+                <h3>1. Giới Thiệu Món Ăn</h3>
+                <p><strong>Nguồn gốc:</strong> Canh rau cải thảo nấu tôm là món canh thanh mát, phổ biến trong các mâm cơm gia đình Việt, mang lại cảm giác dễ chịu và giải nhiệt.</p>
+                <p><strong>Tác dụng:</strong> Giúp bổ sung lượng nước, làm thanh mát cơ thể, hỗ trợ tiêu hóa tốt và cung cấp đầy đủ vitamin cho bữa ăn.</p>
+                <p><strong>Chất dinh dưỡng cung cấp:</strong> Giàu chất xơ, vitamin C, A từ cải thảo kết hợp với hàm lượng protein và canxi lành mạnh từ tôm tươi.</p>
+            </section>
+            <br>
+            <section>
+                <h3>2. Nguyên Liệu Chuẩn Bị</h3>
+                <ul>
+                    <li>Rau cải thảo (rửa sạch, cắt nhỏ vừa ăn)</li>
+                    <li>Tôm tươi (bóc vỏ, làm sạch)</li>
+                    <li>Hành củ (hành tím băm nhuyễn)</li>
+                    <li>Gia vị: Muối, hạt nêm, tiêu, mỡ lợn...</li>
+                </ul>
+            </section>
+            <br>
+            <section>
+                <h3>3. Các Bước Thực Hiện</h3>
+                <div class="recipe-step">
+                    <h4>Bước 1: Chuẩn bị nguyên liệu</h4>
+                    <p>Sơ chế sạch tôm, băm hành củ và cắt nhỏ rau cải thảo để chuẩn bị sẵn sàng cho quá trình nấu.</p>
+                    <div class="media-box">
+                        <img src="nguyen-lieu-canh.jpg" alt="Nguyên liệu cải thảo, tôm và hành củ">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 2: Xào tôm và nấu canh</h4>
+                    <p>Đảo đều tôm và hành củ với chút mỡ lợn. Khi hành dậy mùi thơm và tôm săn lại, cho rau cải thảo vào xào cùng. Khi rau hơi mềm, đổ nước vào đun sôi bùng lên trong khoảng 3 phút rồi nêm nếm lại gia vị vừa ăn.</p>
+                    <div class="media-box">
+                        <video controls playsinline>
+                            <source src="vid-canh.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ thẻ video.
+                        </video>
+                    </div>
+                </div>
+
+            </section>
+            <section class="completion-section">
+                <h3>Thành Phẩm Hoàn Thành</h3>
+                <p>Bát canh rau cải thảo nấu tôm ngọt thanh tự nhiên từ tôm tươi, vị giòn ngọt nhẹ của cải thảo thơm mùi hành phi rất hấp dẫn cho bữa cơm gia đình.</p>
+                <div class="media-box" style="margin-top: 15px;">
+                    <img src="canh.png" alt="Thành phẩm canh rau cải thảo nấu tôm" style="max-width: 500px;">
+                </div>
+            </section>
+            <div class="nav-buttons">
+                <a href="ca-doi-kho.html" class="btn">← Cá đối kho</a>
+                <a href="calo-calculator.html" class="btn">Giá trị dinh dưỡng →</a>
+            </div>
+            <a href="index.html" class="btn" style="display: block; text-align: center; margin-top: 10px;">Quay lại Trang chủ</a>
+        </main>
+
+        <footer>
+            <p>Dự án: Thiết kế 1 bữa ăn dinh dưỡng</p>
+            <p>Học sinh: <strong>Nguyễn Hồng Phúc</strong> - Lớp: <strong>11A6</strong> - Trường: <strong>THPT Nguyễn Duy Trinh</strong></p>
+        </footer>
+    </div>
+
+</body>
+</html>

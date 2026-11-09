@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cá Đối Kho - Chi Tiết Món Ăn</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0fbfb;
+        }
+        .container {
+            background-color: #ffffff;
+            border: 1px solid #b2ebf2;
+        }
+        header {
+            background-color: #008b8b; 
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        /* Thanh điều hướng riêng biệt */
+        .custom-nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px 0;
+            border-bottom: 2px solid #b2ebf2;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .custom-nav a {
+            color: #008b8b;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        .custom-nav a:hover {
+            color: #005f5f;
+        }
+
+        /* Menu thả xuống */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+            z-index: 1000;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            padding: 8px 0;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown-content a {
+            color: #333 !important;
+            padding: 10px 16px;
+            display: block;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #e6f7f7;
+            color: #008b8b !important;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .btn {
+            background-color: #00a8a8;
+            color: white;
+        }
+        .btn:hover {
+            background-color: #007777;
+        }
+        h2, h3 {
+            color: #008b8b;
+        }
+        .recipe-step {
+            background-color: #e6f7f7;
+            border-left: 4px solid #008b8b;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .media-box {
+            margin-top: 12px;
+            text-align: center;
+        }
+        .media-box img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            object-fit: contain; 
+            border-radius: 8px;
+            border: 1px solid #b2ebf2;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto;
+        }
+        .completion-section {
+            background-color: #e0f2f1;
+            border: 2px dashed #008b8b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .completion-section h3 {
+            margin-bottom: 10px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .nav-buttons .btn {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tiêu đề riêng -->
+        <header>
+            <h1>THIẾT KẾ 1 BỮA ĂN DINH DƯỠNG</h1>
+        </header>
+
+        <!-- Phần menu điều hướng riêng biệt -->
+        <nav class="custom-nav">
+            <a href="index.html">Trang chủ</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Món ăn ▾</a>
+                <div class="dropdown-content">
+                    <a href="chan-gio-ham-ruou.html">Chân giò hầm rượu</a>
+                    <a href="ca-doi-kho.html">Cá đối kho</a>
+                    <a href="canh-rau-cai-thao.html">Canh rau cải thảo</a>
+                </div>
+            </div>
+            <a href="calo-calculator.html">Giá trị dinh dưỡng</a>
+        </nav>
+
+        <main>
+            <h2>Cá Đối Kho</h2>
+            <section class="intro-section" style="border-left-color: #008b8b; background-color: #e6f7f7;">
+                <h3>1. Giới Thiệu Món Ăn</h3>
+                <p><strong>Nguồn gốc:</strong> Cá đối kho là món ăn đậm đà nét ẩm thực dân dã truyền thống Việt Nam, vô cùng quen thuộc và đưa cơm trong bữa ăn gia đình.</p>
+                <p><strong>Tác dụng:</strong> Món ăn bồi bổ cơ thể, tốt cho tim mạch, hỗ trợ hệ tiêu hóa và giúp bữa ăn thêm ngon miệng, không bị ngấy.</p>
+                <p><strong>Chất dinh dưỡng cung cấp:</strong> Giàu đạm (Protein) dễ tiêu hóa, chứa lượng lớn Axit béo Omega-3, Vitamin D, Canxi và các khoáng chất thiết yếu.</p>
+            </section>
+
+            <br>
+            <section>
+                <h3>2. Nguyên Liệu Chuẩn Bị</h3>
+                <ul>
+                    <li>Cá đối tươi (làm sạch)</li>
+                    <li>Ớt tươi, nghệ tươi, hành tăm </li>
+                    <li>Khế chua (thái lát vừa ăn)</li>
+                    <li>1 cốc nước chè xanh (nước trà)</li>
+                    <li>Gia vị: Muối, tiêu, nước mắm, hạt nêm...</li>
+                </ul>
+            </section>
+
+            <br>
+            <section>
+                <h3>3. Các Bước Thực Hiện</h3>
+                <div class="recipe-step">
+                    <h4>Bước 1: Sơ chế cá</h4>
+                    <p>Cá đối mua về đánh vảy, bỏ mang và rửa thật sạch ruột bên trong để cá không bị đắng và tanh.</p>
+                    <div class="media-box">
+                        <img src="doi-kho-0.jpg" alt="Sơ chế làm sạch ruột cá đối">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 2: Ướp cá với gia vị</h4>
+                    <p>Thêm các gia vị gồm ớt, nghệ tươi đập dập, hành tăm, muối và tiêu vào ướp cùng cá để khử sạch mùi tanh và tạo màu sắc đẹp mắt.</p>
+                    <div class="media-box">
+                        <img src="doi-kho.jpg" alt="Ướp cá đối với ớt nghệ hành tăm muối tiêu">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 3: Thêm khế và đảo đều</h4>
+                    <p>Cho khế chua đã thái lát vào nồi cá ướp, nhẹ tay đảo đều để vị chua tự nhiên của khế thấm đều vào từng khúc cá.</p>
+                    <div class="media-box">
+                        <img src="doi-kho-2.jpg" alt="Thêm khế chua và đảo đều với cá đối">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 4: Kho cá với nước chè</h4>
+                    <p>Đổ 1 cốc nước chè xanh vào nồi cá, bắc lên bếp đun sôi rồi hạ nhỏ lửa riu riu. Kho cho đến khi nước trong nồi kho sắc lại và sắp cạn nước.</p>
+                </div>
+
+            </section>
+            <section class="completion-section">
+                <h3>Thành Phẩm Hoàn Thành</h3>
+                <p>Món cá đối kho thơm lừng hương nghệ và hành tăm, thịt cá săn chắc thấm vị chua nhẹ của khế kết hợp với vị chát dịu của nước chè xanh vô cùng đậm đà.</p>
+                <div class="media-box" style="margin-top: 15px;">
+                    <img src="ca-doi.png" alt="Thành phẩm món cá đối kho" style="max-width: 500px;">
+                </div>
+            </section>
+            <br>
+            <div class="nav-buttons">
+                <a href="chan-gio-ham-ruou.html" class="btn">← Chân giò hầm rượu</a>
+                <a href="canh-rau-cai-thao.html" class="btn">Canh rau cải thảo →</a>
+            </div>
+        </main>
+        <footer>
+            <p>Dự án: Thiết kế 1 bữa ăn dinh dưỡng</p>
+            <p>Học sinh: <strong>Nguyễn Hồng Phúc</strong> - Lớp: <strong>11A6</strong> - Trường: <strong>THPT Nguyễn Duy Trinh</strong></p>
+        </footer>
+    </div>
+</body>
+</html>

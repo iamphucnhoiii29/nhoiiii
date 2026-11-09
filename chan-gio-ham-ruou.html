@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chân Giò Hầm Rượu - Chi Tiết Món Ăn</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body {
+        background-color: #fcf4f4; /* Nền tổng thể trang hơi hồng nhạt ấm áp */
+    }
+    .container {
+        background-color: #ffffff; /* Nền hộp nội dung màu trắng nổi bật */
+        border: 1px solid #e8cbcb;
+    }
+
+    /* CSS riêng đổi màu chủ đạo sang tông Rượu Vang cho tiêu đề */
+    header {
+        background-color: #8b0000;
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    /* Thanh điều hướng riêng biệt */
+    .custom-nav {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 12px 0;
+        border-bottom: 2px solid #e8cbcb;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .custom-nav a {
+        color: #8b0000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 5px 10px;
+        transition: 0.3s;
+    }
+
+    .custom-nav a:hover {
+        color: #5a0000;
+    }
+
+    /* Menu thả xuống */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+        z-index: 1000;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        padding: 8px 0;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown-content a {
+        color: #333 !important;
+        padding: 10px 16px;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #fff4f4;
+        color: #8b0000 !important;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .btn {
+        background-color: #a52a2a;
+        color: white;
+    }
+    .btn:hover {
+        background-color: #8b0000;
+    }
+    h2, h3 {
+        color: #8b0000;
+    }
+    .recipe-step {
+        background-color: #fff8f8;
+        border-left: 4px solid #8b0000;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    .media-box {
+        margin-top: 12px;
+        text-align: center;
+    }
+    .media-box video {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        max-height: 500px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        background: #000;
+        display: block;
+        margin: 0 auto;
+    }
+    .media-box img {
+        width: 100%;
+        max-width: 450px;
+        height: auto; 
+        object-fit: contain; 
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+        display: block;
+        margin: 0 auto;
+    }
+    .completion-section {
+        background-color: #ffeaea;
+        border: 2px dashed #8b0000;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .completion-section h3 {
+        margin-bottom: 10px;
+    }
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .nav-buttons .btn {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tiêu đề riêng -->
+        <header>
+            <h1>THIẾT KẾ 1 BỮA ĂN DINH DƯỠNG</h1>
+        </header>
+
+        <!-- Phần menu điều hướng riêng biệt -->
+        <nav class="custom-nav">
+            <a href="index.html">Trang chủ</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Món ăn ▾</a>
+                <div class="dropdown-content">
+                    <a href="chan-gio-ham-ruou.html">Chân giò hầm rượu</a>
+                    <a href="ca-doi-kho.html">Cá đối kho</a>
+                    <a href="canh-rau-cai-thao.html">Canh rau cải thảo</a>
+                </div>
+            </div>
+            <a href="calo-calculator.html">Giá trị dinh dưỡng</a>
+        </nav>
+
+        <main>
+            <h2>Chân Giò Hầm Rượu</h2>
+            <section class="intro-section" style="border-left-color: #8b0000; background-color: #fff4f4;">
+                <h3>1. Giới Thiệu Món Ăn</h3>
+                <p><strong>Nguồn gốc:</strong> Chân giò hầm rượu là món ăn ẩm thực truyền thống mang hương vị đậm đà, kết hợp giữa phong cách hầm nhừ Châu Á và mùi thơm nồng đặc trưng của rượu.</p>
+                <p><strong>Tác dụng:</strong> Món ăn giúp bồi bổ cơ thể, làm ấm bụng, tăng cường lưu thông khí huyết và hỗ trợ phục hồi sức khỏe cho người mới ốm dậy hoặc người cần bổ sung năng lượng.</p>
+                <p><strong>Chất dinh dưỡng cung cấp:</strong> Cung cấp lượng lớn Protein (chất đạm), Lipid (chất béo), Collagen dồi dào (tốt cho da và khớp), cùng các khoáng chất như Sắt, Kẽm và Canxi.</p>
+            </section>
+
+            <br>
+            <section>
+                <h3>2. Nguyên Liệu Chuẩn Bị</h3>
+                <ul>
+                    <li>Chân giò heo (chọn phần tươi ngon, làm sạch)</li>
+                    <li>Xì dầu (nước tương)</li>
+                    <li>Nửa chén rượu (rượu nấu ăn hoặc rượu nếp thơm)</li>
+                    <li>Hành thịt (hành khô/hành tím)</li>
+                    <li>Đường phèn</li>
+                    <li>Các gia vị khác (tiêu, hạt nêm, muối...)</li>
+                </ul>
+            </section>
+
+            <br>
+            <section>
+                <h3>3. Các Bước Thực Hiện</h3>
+                <div class="recipe-step">
+                    <h4>Bước 1: Ướp chân giò</h4>
+                    <p>Chân giò sau khi sơ chế đem ướp đều với xì dầu và hành thịt cho ngấm gia vị.</p>
+                    <div class="media-box">
+                        <video controls playsinline>
+                            <source src="chan-gio-1.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ thẻ video.
+                        </video>
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 2: Rán chắc chân giò</h4>
+                    <p>Cho chân giò vào chảo rán cho đến khi phần da và thịt săn lại, vàng đều các mặt. <em>Lưu ý: Chỉ rán chắc phần chân giò, phần nước xì dầu ướp ban đầu trút riêng ra bát để cất lại dùng cho bước sau.</em></p>
+                    <div class="media-box">
+                        <img src="ran-2.jpg" alt="Rán vàng chắc chân giò">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 3: Đun với nước xì dầu và đường phèn</h4>
+                    <p>Cho chân giò đã rán vào nồi, đổ phần nước xì dầu cất lại ở bước 1 vào cùng nửa chén rượu và 1 ít đường phèn. Đun trên bếp cho đến khi khối thịt đủ nóng và ngấm đều gia vị.</p>
+                    <div class="media-box">
+                        <img src="dun.jpg" alt="Đun chân giò với nước xì dầu và đường phèn">
+                    </div>
+                </div>
+                <div class="recipe-step">
+                    <h4>Bước 4: Ủ chín mềm bằng nồi ủ</h4>
+                    <p>Sau khi đun chân giò đủ nóng trên bếp, nhấc nồi vào <strong>nồi ủ</strong> chuyên dụng. Đóng nắp và ủ trong khoảng 2 - 3 tiếng để chân giò tự chín nhừ, thấm vị rượu thơm nồng mà không làm tốn nhiên liệu.</p>
+                    <div class="media-box">
+                        <img src="u.jpg" alt="Ủ chân giò bằng nồi ủ chuyên dụng">
+                    </div>
+                </div>
+
+            </section>
+            <section class="completion-section">
+                <h3>Thành Phẩm Hoàn Thành</h3>
+                <p>Sau thời gian ủ, mở nắp nồi bạn sẽ thu được món chân giò hầm rượu với màu cánh gián bắt mắt, thịt mềm nhừ tan trong miệng, da giòn béo ngậy quyện cùng hương thơm đặc trưng của rượu và đường phèn.</p>
+                <div class="media-box" style="margin-top: 15px;">
+                    <img src="chan-gio.png" alt="Món chân giò hầm rượu hoàn thành" style="max-width: 500px;">
+                </div>
+            </section>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn">← Quay lại Trang chủ</a>
+                <a href="ca-doi-kho.html" class="btn">Cá đối kho →</a>
+            </div>
+            <br>
+        </main>
+        <footer>
+            <p>Dự án: Thiết kế 1 bữa ăn dinh dưỡng</p>
+            <p>Học sinh: <strong>Nguyễn Hồng Phúc</strong> - Lớp: <strong>11A6</strong> - Trường: <strong>THPT Nguyễn Duy Trinh</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
